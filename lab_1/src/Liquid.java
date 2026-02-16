@@ -26,4 +26,9 @@ public class Liquid {
     public void changeDensity(double delta) {
         this.density += delta;
     }
+
+    @Override
+    public String toString() {
+        return this.getName() + ": " + this.getDensity();
+    }
 }

@@ -17,4 +17,9 @@ public class Alcohol extends Liquid {
     public void changeStrength(double delta) {
         this.strength += delta;
     }
+
+    @Override
+    public String toString() {
+        return this.getName() + ": " + this.getDensity() + ", " + this.getStrength();
+    }
 }
